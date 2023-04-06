@@ -1,38 +1,122 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Project Title
 
-First, run the development server:
+Blog With Reactjs/Nextjs 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+With API.
+  
+## API Reference
+
+#### Get all items
+
+```http
+  GET /api/test/getPost
+  GET /api/test/get
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+#### Get item
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```http
+  GET /api/items/${id}
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### add(num1, num2)
 
-## Learn More
+Takes two numbers and returns the sum.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Authors
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Mithilesh Thakur
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Running Tests
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To run command
+
+```bash
+  npm run dev
+```
+
+
+## Tech Stack
+
+**Client:** React, Nextjs, TailwindCSS
+
+**Server:** MongoDb
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/mithilesh2023/finalBlog.git
+```
+
+Go to the project directory
+
+
+
+Install dependencies
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+ 
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
+//Add the @tailwind directives for each Tailwind’s layers to your globals.css file.
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+Start the server
+
+```bash
+ npm run dev
+```
+
+
+## Installation
+
+Install my-project 
+
+```bash
+  npx install create-next-app@latest finalblog
+  
+```
+    
+## Support
+
+For support, email manavmourya1996@gmail.com 
+
+
+## Lessons Learned
+
+When I was faching data in api i got some difficulites and then i read docs on 'nextjs.org' and got many solution but for some region i met to my teacher. and i resolve props. During this i learn new skills and i improved my self and i will keep it continue. I did not complete this project caz i got ill and then hospitalized for 2 to 3 days . if i'll get 2-3 days more i will make it better thanks.
+
